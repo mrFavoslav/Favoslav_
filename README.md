@@ -4,5 +4,4 @@ My real name is Ondřej Chmelíček and I live in Czechia. I am a 16-year-old IT
 
 You can read more about me on [my website](https://www.favoslav.cz/about/) or join my [discord server](https://dsc.favoslav.cz)
 
-[![ko-fi](https://storage.ko-fi.com/cdn/kofi3.png?v=3)](https://ko-fi.com/Y8Y7MIGB1)
-<img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" width="128">
+[![ko-fi](<img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" width="196">)](https://ko-fi.com/Y8Y7MIGB1)
