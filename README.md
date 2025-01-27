@@ -1,6 +1,6 @@
 ## 👋 Hello, I'm Favoslav_
 
-My real name is Ondřej Chmelíček and I live in Czechia. I am a -year-old IT student at Zámek Kuřim. With a keen interest in development, I am currently involved in some open-source projects. Beside of that, I have a passion for cars and looking forward to buy a Mazda Miata MX5 NA, while also enjoying hands-on computer work and playing airsoft.
+My real name is Ondřej Chmelíček and I live in Czechia. I am a 17-year-old IT student at Zámek Kuřim. With a keen interest in development, I am currently involved in some open-source projects. Beside of that, I have a passion for cars and looking forward to buy a Mazda Miata MX5 NA, while also enjoying hands-on computer work and playing airsoft.
 
 You can read more about me on [my website](https://www.favoslav.cz/about/) or join my [discord server](https://dsc.favoslav.cz)
 
