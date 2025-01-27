@@ -21,10 +21,19 @@ jobs:
           echo "Age fetched: $AGE"
           echo "age=$AGE" >> $GITHUB_ENV
 
+      - name: Debug AGE Variable
+        run: |
+          echo "Age fetched: $AGE"
+
+      - name: Debug README.md Before Update
+        run: |
+          echo "Contents of README.md before update:"
+          cat README.md
+
       - name: Update README.md
         run: |
           echo "Updating README.md..."
-          sed -i "s/{{AGE}}/$AGE/" README.md
+          sed -i "s/-year-old/$AGE-year-old/" README.md
           echo "Contents of README.md after update:"
           cat README.md
 
