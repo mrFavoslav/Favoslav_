@@ -33,7 +33,7 @@ jobs:
       - name: Update README.md
         run: |
           echo "Updating README.md..."
-          sed -i "s/-year-old/$AGE-year-old/" README.md
+          sed -i "s/[0-9]\+-year-old/$AGE-year-old/" README.md
           echo "Contents of README.md after update:"
           cat README.md
 
