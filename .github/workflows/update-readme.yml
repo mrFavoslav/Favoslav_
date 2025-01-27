@@ -1,0 +1,35 @@
+name: Update Age in README
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch age from API
+        id: fetch-age
+        run: |
+          echo "Fetching age from API..."
+          AGE=$(curl -s https://api.favoslav.cz/v1/assets/aboutme | jq '.age')
+          echo "Age fetched: $AGE"
+          echo "age=$AGE" >> $GITHUB_ENV
+
+      - name: Update README.md
+        run: |
+          echo "Updating README.md..."
+          sed -i "s/I am a [0-9]\+-year-old/I am a $AGE-year-old/" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update age in README.md"
+          git push
