@@ -17,9 +17,7 @@ jobs:
         id: fetch-age
         run: |
           AGE=$(curl -s https://api.favoslav.cz/v1/assets/aboutme | jq -r '.age')
-          echo "Age fetched: $AGE"
           echo "AGE=$AGE" >> $GITHUB_ENV
-          echo "Age fetched: $AGE"
 
       - name: Debug AGE Variable
         run: |
@@ -33,7 +31,7 @@ jobs:
       - name: Update README.md
         run: |
           echo "Updating README.md..."
-          sed -i "s/[0-9]\+-year-old/${AGE}-year-old/" README.md
+          sed -i "s/[0-9]\+-year-old/$AGE-year-old/" README.md
           echo "Contents of README.md after update:"
           cat README.md
 
